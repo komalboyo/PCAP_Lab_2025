@@ -30,10 +30,10 @@ __global__ void transformMatrix(int *A, int *B, int m, int n) {
     }
 }
 
-void printMatrix(int *M, int rows, int cols) {
+void printMatrix(int * m, int rows, int cols) {
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {
-            printf("%d ", M[i * cols + j]);
+            printf("%d ", m[i * cols + j]);
         }
         printf("\n");
     }
